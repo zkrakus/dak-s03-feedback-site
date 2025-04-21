@@ -10,8 +10,7 @@ COPY . .
 
 EXPOSE 80
 
-# VOLUME ["/app/node_modules"]
-
-VOLUME [ "/temp" ]
+VOLUME [ "/app/node_modules" ]
+VOLUME [ "/app/temp" ]
 
 CMD ["npm", "start"]
